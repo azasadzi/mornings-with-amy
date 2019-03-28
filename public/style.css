@@ -52,6 +52,7 @@
       .c {
           grid-column: 1 ;
           grid-row: 2 ;
+          text-align: center;
       }
       .d {
           grid-column: 2;
