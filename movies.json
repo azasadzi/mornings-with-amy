@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Airplane",
+        "year": 1980,
+        "rating": 5
+    },
+    {
+        "title": "Pitch Perfect",
+        "year": 2012,
+        "rating": 5
+    },
+    {
+        "title": "The Other Guys",
+        "year": 2010,
+        "rating": 5
+    },
+    {
+        "title": "Footloose",
+        "year": 1984,
+        "rating": 5
+    },
+    {
+        "title": "Dirty Dancing",
+        "year": 1987,
+        "rating": 5
+    }
+]

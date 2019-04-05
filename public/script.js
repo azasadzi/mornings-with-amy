@@ -18,5 +18,18 @@ var randomDog = ()=>{
     });
 }
 
+var randomMovie = ()=>{
+fetch('/favorite-movies')
+.then(function(response) {
+    return response.json();
+  })
+  .then(function(movie) {
+      console.log(movie)
+      var html = `<h3> "${movie.title} (${movie.year})"</h3> <p> Amy's Rating ${movie.rating}/5</p>`;
+      document.getElementById("randomMovie").innerHTML = html;
+  });
+
+}
 
 randomDog();
+randomMovie();
