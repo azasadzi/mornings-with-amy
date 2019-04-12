@@ -20,6 +20,22 @@ app.get('/favorite-movies', (req,res) => {
     var randomMovie = movies[randomNumber];
     res.send(randomMovie);
 })
+app.get('/weather',(req,response)=>{
+    const https = require("https");
+    const url = "https://www.metaweather.com/api/location/2379574/";
+    https.get(url, res => {
+      res.setEncoding("utf8");
+      let body = "";
+      res.on("data", data => {
+        body += data;
+      });
+      res.on("end", () => {
+        body = JSON.parse(body);
+        response.send(body);
+      });
+    });
+  })
+
 
 console.log("starting server on 3000")
 app.listen(3000);
